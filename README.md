@@ -55,8 +55,7 @@ This project aims to analyze human drug adverse reactions by leveraging various 
 
 1. **Clone the Repository**
     ```bash
-    git clone https://github.com/yourusername/your-repository.git
-    cd your-repository
+    git clone https://github.com/MahammadRafi06/Drug-Reaction-Trends-and-Insights-with-AI
     ```
 
 2. **Install Python Dependencies**
@@ -70,7 +69,10 @@ This project aims to analyze human drug adverse reactions by leveraging various 
 4. **Set Up Azure Databricks**
    - Import the PySpark and Spark SQL scripts to process the data.
 
-5. **Run the Streamlit App**
+4. **Download PDF Files and Create Unstructured(pdf) reports**
+   - Run python scripts.
+
+6. **Run the Streamlit App**
     ```bash
     streamlit run app.py
     ```
@@ -86,9 +88,9 @@ This project aims to analyze human drug adverse reactions by leveraging various 
 ## Project Structure
 
 ```plaintext
-├── data/                    # Raw and processed data files
-├── notebooks/               # Jupyter notebooks for data analysis
-├── scripts/                 # Python scripts for data processing and extraction
+├── data/                    # a subset of raw data files used
+├── python_scripts/          # .py files to download pdf fiels from PubChem
+├── Sql_files/               # Databricks and Azure SQL scripts for data processing and extraction
 ├── app.py                   # Streamlit application code
 ├── README.md                # Project documentation
 └── requirements.txt         # Python dependencies
