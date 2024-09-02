@@ -1,13 +1,13 @@
 import os
+import pickle
+import re
 from dotenv import load_dotenv
 from langchain_community.document_loaders import PyPDFLoader, PyPDFDirectoryLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
-import re
 from langchain_openai import ChatOpenAI
 from langchain_core.prompts import ChatPromptTemplate
-import pickle
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain.chains import create_retrieval_chain
 import streamlit as st
